@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+:root{
+    --secondary-color: #ffe6e6;
+    --primary-color: #6155a6;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+    font-family: 'Lato', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ .nav{
+    max-width: 100%; 
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+    background-color: var(--primary-color);
+    color: green;
 }
 
-.App-link {
-  color: #61dafb;
+.link{
+    text-decoration: none;
+    font-size: large;
+    font-weight: bolder;
+    color: var(--secondary-color);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.selected{
+    font-size: 2rem;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card{
+    margin: 5rem auto;
+    padding: 3rem;
+    max-width: 60%;
+    max-height: 50%;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card input{
+    max-width: 100%;
+    border: 0px;
+    padding: 1rem;
+    background-color: #F9FAFB;
+    border-radius: 5px 5px 0 0;
+}
+
+.card input:focus{
+    outline: none;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+button{
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 0.5rem;
+    font-size: larger;
+}
+
+button:focus{
+    outline: none;
+}
+
+.message{
+    color: var(--primary-color);
+    font-size: larger;
 }
